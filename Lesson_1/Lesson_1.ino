@@ -6,7 +6,7 @@ int waitTimeOff=900;
 void setup() {
   // put your setup code here, to run once:
   pinMode(LEDPin,OUTPUT);
-  
+
 }
 
 void loop() {
