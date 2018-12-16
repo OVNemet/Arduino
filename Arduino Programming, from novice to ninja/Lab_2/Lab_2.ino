@@ -31,9 +31,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
-
   // red pedestrian
   digitalWrite(redLedPedestrian, HIGH); // turn and keep the red LED pedestrian on (HIGH is the voltage level)
   
@@ -44,6 +41,8 @@ void loop() {
 
   // yellow traffic
   digitalWrite(orangeLedTraffic, HIGH); // turn the orange LED traffic on (HIGH is the voltage level)
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
   delay(1000); // wait for a second
   
   // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
